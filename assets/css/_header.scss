@@ -1,0 +1,54 @@
+header{
+    .top-bar {
+        background-color: #d3d5d773;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-bar {
+      background-color: #d3d5d773;
+      padding: 0.5rem 1rem;
+  }
+}
+
+.navbar-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(21, 7, 50, 0.7) !important;
+    text-align: center;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #BCED24;
+    text-align: center;
+  }
+
+  
+  .whatsapp-ico {
+    background: rgba(211, 213, 215, 0.3);
+    padding: 8px;
+    margin-left: 5px;
+  }
+
+.header_group {
+    display: flex;
+    justify-content: space-around;
+    .line {
+        width: 1px;
+        background-color: #D3D5D7;
+      }    
+}
+
+@media (min-width:0px) and (max-width:479px) {
+  header .top-bar {
+      flex-direction: column;
+      align-items: center;
+  }
+  .header_group {
+    flex-direction: column;
+    align-items: center;
+  }
+}

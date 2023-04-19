@@ -1,0 +1,26 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Matches": {
+    "description": "Auto imported from components/Matches.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "StadiumInfo": {
+    "description": "Auto imported from components/StadiumInfo.vue"
+  },
+  "TicketInfo": {
+    "description": "Auto imported from components/Ticket_Info.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  }
+}

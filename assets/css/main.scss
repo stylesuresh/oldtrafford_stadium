@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300;400&display=swap');
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #000000;
+}
+
+@import "header";
+@import "footer";
+
+
+a {
+  color: rgba(21, 7, 50, 0.7);
+}
+
+a:hover {
+  color: #BCED24 !important;
+}
+p {
+  margin-bottom: 0px !important;
+}
+.banner {
+  overflow: hidden;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  background: url(./assets/images/banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  // background-color: #000000 0% 0% no-repeat padding-box;
+  /* opacity: 0.4; */
+  // margin-bottom: 100px;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: #000000 0% 0% no-repeat padding-box; */
+    /* opacity: 0.4; */
+    
+}
+.banner-content {
+  background: #0D0033;
+  padding: 10px 20px;
+  margin-bottom: 100px;
+}
+
+.banner-loc {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 70%;
+}
+.banner-loc p {
+  margin-bottom: 0px !important;
+  color: #000;
+}
+.stadium_sec {
+  background-color: #d3d5d773;
+  .header_group {
+    padding: 30px 20px;
+  }
+  .stadium-card-sec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    p {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px 0px;
+    }
+  }
+  .stadium_img {
+    width: 450px;
+    height: 400px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .bg {
+    width: 450px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: #BCED24;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+  }
+  .stadium_content {
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    padding: 20px 0px;
+    margin-left: 100px;
+  }
+  .stadium_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 100px;
+  }
+  .right_border {
+    border-right: 1px solid #D3D5D7;
+  }
+  .line {
+    width: 1px;
+    background-color: #D3D5D7;
+  }
+  .main_title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+}
+.history_sec {
+  border-bottom: 1px solid #0D00;
+}
+.history_sec .heading {
+  font-weight: 700;
+  font-size: 18px !important;
+}
+.history_sec .history_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.history_sec .history_sec_content {
+  padding: 30px 0px;
+}  
+.nearby_contents {
+  .v-tabs-slider-wrapper {
+    background-color: #BCED24;
+    height: 3px !important;
+  }
+  .v-tabs-slider {
+    background-color: #BCED24;
+  }
+  .v-tab {
+    padding: 0px 5px !important;
+  }
+  .nearby_card {
+    box-shadow: none !important;
+    border: 1px solid #D3D5D7 !important;
+  }
+}
+.icon_btn {
+  background-color: transparent !important;
+  border: 1px solid #D3D5D7;
+  text-transform: capitalize !important;
+  box-shadow: none !important;
+  svg {
+    margin: 0px 5px;
+  }
+}
+.view_btn {
+  background-color: transparent !important;
+  border: none;
+  text-transform: capitalize !important;
+  box-shadow: none !important;
+  svg {
+    margin: 0px 5px;
+  }
+}
+
+.nearby_sec {
+  display: flex;
+  padding: 20px 50px 10px 50px;
+}
+.nearby_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  .important {
+    font-weight: 700;
+  }
+}
+.teams_card {
+  margin: 15px 0px;
+  box-shadow: none !important;
+  border: 1px solid #D3D5D7 !important;
+}
+.stadiums_card {
+  margin: 15px 0px;
+  box-shadow: none !important;
+  border: 1px solid #D3D5D7 !important;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+}
+.accordion-item {
+  background-color: #d3d5d761;;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 20px;
+  border: 1px solid #D3D5D7;
+}
+.collapsed {
+  background-color: #fff;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+}
+.plus {
+  margin-left: 10px;
+  font-size: 2em;
+  line-height: 100%;
+}
+.match_sec {
+  .main_content {
+    padding: 20px 30px;
+    border-top: 1px solid #0d003336;
+    .filter_card {
+      margin: 20px;
+      .reset_btn {
+        box-shadow: none;
+        background-color: rgba(117, 154, 171, 0.2);;
+        border-radius: 12px;
+      }
+    }
+    .match_details {
+      background: linear-gradient(180deg, #F2F2F3 28.99%, rgba(255, 255, 255, 0) 100%);
+      padding: 30px;
+      .pagination {
+        margin: 30px 0px;
+      }
+      .v-pagination__item {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0px !important;
+        border-bottom: 2px solid #BCED24 !important;
+      }
+      .theme--light.v-pagination .v-pagination__item--active {
+        color: #000 !important;
+      }
+      .v-pagination__navigation {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0px !important;
+      }
+    }
+  }
+  .v-slide-group__content {
+    justify-content: center;
+  }
+  .v-tabs-slider-wrapper {
+    background-color: #BCED24;
+    height: 3px !important;
+  }
+  .v-tabs-slider {
+    background-color: #BCED24;
+  }
+}
+.sell_ticket_sec {
+  padding: 20px 30px;
+  margin: 20px 20px 10px 20px;
+  border: 3px solid #BCED24;
+  background: rgba(188, 237, 36, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .sell_content{
+    padding: 10px 20px;
+  }
+  .halfcircle1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 3px solid #BCED24;
+    border-right: #fff;
+    border-bottom: #fff;
+    rotate: 0deg;
+    -webkit-transform:rotate(-45deg);
+    position: absolute;
+    top: 30%;
+    right: -5%;
+    color: #fff;
+    background-color: #fff;
+  }
+  .halfcircle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 3px solid #BCED24;
+    border-right: #fff;
+    border-bottom: #fff;
+    rotate: 180deg;
+    -webkit-transform:rotate(-45deg);
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    color: #fff;
+    background-color: #fff;
+  }
+  .sell_btn {
+    padding: 10px 20px;
+    background-color: #BCED24;
+    color: #000;
+    border: 3px solid #BCED24;
+    font-weight: 700;
+  }
+}
+.theme--light.v-chip:not(.v-chip--active) {
+  background: rgba(117, 154, 171, 0.2) !important;
+}
+.match_info {
+  background-color: #D3D5D7;
+  padding: 10px 20px;
+  // display: flex;
+  // flex-wrap: wrap;
+  .date_sec {
+    position: relative;
+    width: 100%;
+    max-width: 80px;
+    .cal_top {
+      position: absolute;
+      top: -5%;
+      left: 30%;
+    }
+    .date {
+      background-color: #fff;
+      padding: 6px;
+      font-size: 40px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .empty {
+      background-color: #000;
+      padding: 5px 20px;
+      color: #fff;
+    }
+  } 
+  .match_detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0d003391;
+    .team_logos {
+      padding: 5px 10px;
+      .teamlogo {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+      }
+    }
+    .league {
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #0D0033; 
+      letter-spacing: 0.01em;
+    }
+    .teams {
+      font-size: 18px;
+      font-weight: 700;
+      color: #150732;    
+    }
+    .btn_grp_sec {
+      position: relative;
+    }
+    .buy_btn {
+      padding: 5px 20px;
+      background-color: #BCED24;
+      color: #000;
+      font-weight: 700;  
+      margin: 10px 0px;
+    }
+    .halfcircle1 {
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      position: absolute;
+      top: 37%;
+      right: -8%;
+      color: #D3D5D7;
+      background-color: #D3D5D7;
+    }
+    .halfcircle2 {
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      position: absolute;
+      top: 37%;
+      left: -8%;
+      color: #D3D5D7;
+      background-color: #D3D5D7;
+    }
+  }
+  .bottom_content {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flag_img {
+    object-fit: contain;
+  }
+  p {
+    padding: 0px 5px;
+  }
+  .important {
+    font-weight: 700;
+  }
+}
+
+@media (min-width:961px) and (max-width:1265px) {
+  .banner-loc {
+    left: 55%;
+  }
+  .stadium_sec .stadium_img {
+    width: 370px;
+    height: 320px;
+  }
+  .stadium_sec .bg {
+    width: 370px;
+    height: 320px;
+    top: 3%;
+    left: 7%;
+  }
+  .sell_ticket_sec .halfcircle1 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    right: -2%;
+  }
+  .sell_ticket_sec .halfcircle2 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    left: -2%;
+  }
+
+}
+@media (min-width:768px) and (max-width:960px) {
+  .banner-loc {
+    left: 55%;
+  }
+  .stadium_sec .stadium_img {
+    width: 300px;
+    height: 270px;
+  }
+  .stadium_sec .bg {
+    width: 300px;
+    height: 270px;
+    top: 3%;
+    left: 7%;
+  }
+}
+@media (min-width:480px) and (max-width:767px) {
+  .banner-loc {
+    left: 45%;
+    p {
+      font-size: 13px;
+    }
+  }
+  .match_info .match_detail .team_logos .teamlogo {
+    width: 35px;
+    height: 35px;
+  }
+  .match_info .bottom_content p {
+    font-size: 15px;
+  }
+  .sell_ticket_sec .halfcircle1 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    right: -2%;
+  }
+  .sell_ticket_sec .halfcircle2 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    left: -2%;
+  }
+  .stadium_sec .stadium_content {
+    margin-left: 0px;
+  }
+  .accordion {
+    width: 100%;
+  }
+  .footer_sec .footer_top {
+    flex-direction: column;
+  }
+  .footer_sec .footer_top .grp_sec .update_btn {
+    padding: 5px 15px;
+  }
+}
+
+@media (min-width:0px) and (max-width:479px) {
+  .banner-loc {
+    left: 20%;
+    p {
+      font-size: 13px;
+    }
+  }
+  .match_info .match_detail .team_logos .teamlogo {
+    width: 35px;
+    height: 35px;
+  }
+  .match_info .match_detail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .match_info .bottom_content p {
+    font-size: 15px;
+  }
+  .sell_ticket_sec .halfcircle1 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    right: -4%;
+  }
+  .sell_ticket_sec .halfcircle2 {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    left: -4%;
+  }
+  .stadium_sec .stadium_content {
+    margin-left: 0px;
+  }
+  .stadium_sec .stadium_img {
+    width: 100%;
+    height: 320px;
+  }
+  .stadium_sec .bg {
+    display: none;
+  }
+  .history_sec .history_content {
+    flex-direction: column;
+  }
+  .accordion {
+    width: 100%;
+  }
+}
